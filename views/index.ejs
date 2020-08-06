@@ -1,0 +1,83 @@
+<%- include('partials/header') %>
+<div class="jumbotron fluid">
+  <div class="headW">
+    <div class="head">
+      <div class="repo">
+        <p id="reports" class="lead md-0 text-center">Last checked : <span class="text-info" id="dateC">
+            <strong><%= check %></strong>
+          </span>
+        </p>
+        <p id="reports" class="lead mt-0 text-center">Last reported : <span class="text-info" id="dateR">
+            <strong><%= report %></strong>
+          </span>
+        </p>
+      </div>
+      <h1 class="display-1">
+        Kovid-19
+      </h1>
+      <h4 class="lead text-info">world wide</h4>
+    </div>
+  </div>
+  <div class="flox mt-3 md-0 row">
+    <div class="flox2">
+      <h4>
+        Total Cases
+        <strong>
+          <span class="text-primary">
+            <%= bata.data.confirmed %>
+          </span>
+        </strong>
+      </h4>
+    </div>
+
+    <div class="flox2">
+      <h4>
+        New Cases
+        <strong>
+          <span class="text-warning">
+            <%= data.Global.NewConfirmed %>
+          </span>
+        </strong>
+      </h4>
+    </div>
+
+    <div class="flox2">
+      <h4>
+        Total Deaths
+        <strong>
+          <span class="text-danger">
+            <%= bata.data.deaths %>
+          </span>
+        </strong>
+      </h4>
+    </div>
+
+    <div class="flox2">
+      <h4>
+        Total Recovered
+        <strong>
+          <span class="text-success">
+            <%= bata.data.recovered %>
+          </span>
+        </strong>
+      </h4>
+    </div>
+
+    <div class="flox2">
+      <h4>
+        New Recovered
+        <strong>
+          <span class="text-success">
+            <%= data.Global.NewRecovered %>
+          </span>
+        </strong>
+      </h4>
+    </div>
+  </div>
+  <form method="get" action="/covid19">
+    <button class="btn mt-4 btn-lg btn-block btn-outline-primary">
+      Get Started
+    </button>
+  </form>
+
+  <%- include('partials/footer') %>

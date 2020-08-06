@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+<div class="jumbotron">
+  <div class="container m-0">
+    <h1 class="resh1 display-3"><%= data.data.location %></h1>
+    <div class="container text-center">
+      <ul class="mr-auto" id="results">
+        <li>
+          <span class="ico"><i class="text-primary fa fa-bullseye" aria-hidden="true"></i>
+          </span>
+          <span class="name">
+            Confirmed Cases
+          </span>
+          <span class="data">
+            <%= data.data.confirmed %>
+          </span>
+        </li>
+        <li>
+          <span class="ico"><i class="text-primary fa fa-bullseye" aria-hidden="true"></i>
+          </span>
+          <span class="name">
+            Recovered Cases
+          </span>
+          <span class="data">
+            <%= data.data.recovered %>
+          </span>
+        </li>
+        <li>
+          <span class="ico"><i class="text-primary fa fa-bullseye" aria-hidden="true"></i>
+          </span>
+          <span class="name">
+            Total Deaths
+          </span>
+          <span class="data">
+            <%= data.data.deaths %>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

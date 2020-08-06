@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.flox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main {
+  max-height: 90vh;
+}
+
+.flox2 {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  top: 90%;
+  right: 0;
+  max-height: 10vh;
+}
+
+.activated {
+  color: blue;
+}
+
+.head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#inp {
+  padding: 15px;
+  height: 50px;
+}
+
+.resh1 {
+  margin-top: 15px;
+}
+
+#reports {
+  font-size: 10px;
+  margin: 0;
+}
+
+.repo {
+  position: relative;
+  display: inline;
+
+}
+
+#dateC,
+#dateR {
+  font-weight: 600;
+  font-style: oblique;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+#dateR:hover {
+  font-size: 1rem;
+}
+
+#dateC:hover {
+  font-size: 1rem;
+}
+
+#results {
+  position: absolute;
+  width: 80vw;
+  margin: 100px auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+#results li {
+  display: flex;
+  background: rgba(139, 134, 134, 0.13);
+  padding: 10px 20px;
+  margin-top: 5px 0;
+  transition: 0.5s;
+}
+
+#results li:nth-child(1) {
+  background: rgba(61, 97, 255, 0.349);
+}
+
+#results li:nth-child(2) {
+  background: rgba(105, 133, 255, 0.322);
+}
+
+#results li:nth-child(3) {
+  background: rgba(207, 216, 255, 0.376);
+}
+
+#results li span:nth-child(1) {
+  width: 30px;
+}
+
+#results li span:nth-child(2) {
+  width: 200px;
+}
+
+#results li span:nth-child(3) {
+  width: 100px;
+  text-align: right;
+}
+
+#results li:hover {
+  transform: scale(1.06);
+}
+
+#fa {
+  outline: none;
+  border: none;
+}
+
+
+body::-webkit-scrollbar {
+  width: 7px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0275d8;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 1px solid #f7f7f7;
+  /* creates padding around scroll thumb */
+}
