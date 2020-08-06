@@ -7,7 +7,7 @@ const {
   render
 } = require("ejs");
 var app = express();
-const port = process.env.port || 8080;
+const port = process.env.PORT || 8080;
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
