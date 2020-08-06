@@ -156,6 +156,7 @@ app.get("/covid19", function (req, res) {
 
 app.get("/results", function (req, res) {
   var country = req.query.search;
+  country = country.charAt(0).toUpperCase() + country.slice(1);
   options.qs.country = country;
   request(options, function (error, response, body) {
     if (!error && response.statusCode == 200) {
