@@ -35,11 +35,15 @@ main {
 }
 
 #footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 90%;
   right: 0;
   max-height: 10vh;
+}
+
+#jumbo {
+  position: static;
 }
 
 .activated {
